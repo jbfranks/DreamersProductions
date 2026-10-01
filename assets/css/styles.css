@@ -260,10 +260,33 @@ body {
 }
 
 .tarot-back {
-  background: radial-gradient(circle at 50% 25%, #300606 0%, #1c0606 60%, #0d0404 100%);
-  border: 1px solid rgba(212, 175, 55, 0.6);
+  background: radial-gradient(circle at 50% 25%, #2a0505 0%, #150303 60%, #0a0202 100%);
+  border: 1px solid rgba(212, 175, 55, 0.7);
   transform: rotateY(180deg);
-  box-shadow: 0 0 30px rgba(139, 0, 0, 0.35), 0 15px 40px rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 30px rgba(139, 0, 0, 0.4), 0 15px 40px rgba(0, 0, 0, 0.85);
+  position: relative;
+  overflow: hidden;
+}
+
+.tarot-back-art {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.tarot-back-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.tarot-card:hover .tarot-back-art img,
+.tarot-card.is-flipped .tarot-back-art img {
+  transform: scale(1.06);
 }
 
 /* Antique Parchment Scroll Styling */
