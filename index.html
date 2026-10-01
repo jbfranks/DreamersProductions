@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dreamers Productions — Interactive Parties &amp; Creative Events</title>
-  <meta name="description" content="Dreamers Productions crafts immersive mystery parties, theatrical masquerades, escape puzzles, and creative studio events. Book your unforgettable experience today." />
+  <meta name="description" content="Dreamers Productions crafts bespoke mystery parties, theatrical masquerades, escape room puzzles, and creative studio ateliers. Call 615-519-3116 to book your event." />
 
-  <!-- Fonts -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -39,51 +39,64 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Favicon (gold star) -->
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>✦</text></svg>" />
 </head>
 
-<body class="font-body antialiased">
+<body class="font-body antialiased selection:bg-dp-gold selection:text-dp-black">
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       FIXED NAVIGATION — Glassmorphism + Gold Border
+       FIXED NAVIGATION — Gold-bordered Glassmorphism Header
        ═══════════════════════════════════════════════════════════════════════ -->
   <header id="main-nav" class="nav-glass fixed top-0 left-0 right-0 z-50 transition-all duration-500">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 sm:h-20">
-        <!-- Logo / Brand -->
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Link with Monogram -->
         <a href="#hero" class="flex items-center gap-3 group">
-          <span class="text-dp-gold text-2xl">✦</span>
-          <span class="font-cinzel-dec text-lg sm:text-xl text-gold-gradient tracking-wider">Dreamers</span>
+          <div class="w-10 h-10 rounded-full border border-dp-gold/60 flex items-center justify-center bg-gradient-to-br from-dp-gold-dark/40 to-black group-hover:border-dp-gold transition-colors">
+            <span class="text-dp-gold font-cinzel-dec text-base group-hover:scale-110 transition-transform">D</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-cinzel-dec text-base sm:text-lg text-gold-gradient tracking-wider leading-none">Dreamers</span>
+            <span class="font-cinzel text-[10px] tracking-[0.3em] text-dp-gold/70 mt-1 uppercase">Productions</span>
+          </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#events" class="font-cinzel text-sm tracking-widest text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase">Events</a>
-          <a href="#services" class="font-cinzel text-sm tracking-widest text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase">Creative Studio</a>
-          <a href="#booking" class="font-cinzel text-sm tracking-widest text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase">Book a Party</a>
+        <div class="hidden md:flex items-center gap-8 lg:gap-10">
+          <a href="#events" class="font-cinzel text-xs lg:text-sm tracking-[0.2em] text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-px after:bg-dp-gold after:transition-all">Events</a>
+          <a href="#creative-studio" class="font-cinzel text-xs lg:text-sm tracking-[0.2em] text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-px after:bg-dp-gold after:transition-all">Creative Studio</a>
+          <a href="#protocol" class="font-cinzel text-xs lg:text-sm tracking-[0.2em] text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-px after:bg-dp-gold after:transition-all">How It Works</a>
+          <a href="#booking" class="font-cinzel text-xs lg:text-sm tracking-[0.2em] text-gray-300 hover:text-dp-gold transition-colors duration-300 uppercase py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-px after:bg-dp-gold after:transition-all">Book a Party</a>
         </div>
 
-        <!-- Phone FAB -->
-        <a href="tel:+16155193116"
-           class="fab-glow flex items-center gap-2 bg-gradient-to-r from-dp-gold-dark to-dp-gold text-dp-black font-bold text-sm sm:text-base px-4 py-2 sm:px-5 sm:py-2.5 rounded-full hover:scale-105 transition-transform duration-300">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
-          <span class="hidden sm:inline">615-519-3116</span>
-          <span class="sm:hidden">Call</span>
-        </a>
+        <!-- Phone Action Button -->
+        <div class="flex items-center gap-3">
+          <a href="tel:6155193116"
+             class="fab-glow flex items-center gap-2 bg-gradient-to-r from-dp-gold-dark via-dp-gold to-dp-gold-light text-dp-black font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-full hover:scale-105 active:scale-95 transition-all shadow-lg tracking-wider"
+             title="Direct Line to Master of Ceremonies">
+            <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+            <span class="font-cinzel tracking-widest font-bold">615-519-3116</span>
+          </a>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="mobile-toggle" class="md:hidden text-dp-gold ml-3 p-2" aria-label="Open navigation menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+          <!-- Mobile Menu Hamburger -->
+          <button id="mobile-toggle" class="md:hidden text-dp-gold p-2 rounded-lg border border-dp-gold/30 hover:border-dp-gold transition-colors" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
       </div>
 
       <!-- Mobile Dropdown -->
       <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="py-4 border-t border-dp-gold/20 flex flex-col gap-4">
-          <a href="#events" class="font-cinzel text-sm tracking-widest text-gray-300 hover:text-dp-gold transition-colors uppercase px-2">Events</a>
-          <a href="#services" class="font-cinzel text-sm tracking-widest text-gray-300 hover:text-dp-gold transition-colors uppercase px-2">Creative Studio</a>
-          <a href="#booking" class="font-cinzel text-sm tracking-widest text-gray-300 hover:text-dp-gold transition-colors uppercase px-2">Book a Party</a>
+        <div class="py-5 border-t border-dp-gold/20 flex flex-col gap-4 bg-dp-black/95">
+          <a href="#events" class="font-cinzel text-sm tracking-widest text-gray-200 hover:text-dp-gold transition-colors uppercase px-3 py-1">Events</a>
+          <a href="#creative-studio" class="font-cinzel text-sm tracking-widest text-gray-200 hover:text-dp-gold transition-colors uppercase px-3 py-1">Creative Studio</a>
+          <a href="#protocol" class="font-cinzel text-sm tracking-widest text-gray-200 hover:text-dp-gold transition-colors uppercase px-3 py-1">How It Works</a>
+          <a href="#booking" class="font-cinzel text-sm tracking-widest text-gray-200 hover:text-dp-gold transition-colors uppercase px-3 py-1">Book a Party</a>
+          <a href="tel:6155193116" class="font-cinzel text-sm tracking-widest text-dp-gold uppercase px-3 py-1 flex items-center gap-2">
+            <span>Direct Call: 615-519-3116</span>
+          </a>
         </div>
       </div>
     </nav>
@@ -91,254 +104,401 @@
 
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       HERO SECTION — Floating Grimoire + Sliding Text
+       HERO SECTION — Layered Canvas with Floating Grimoire & Sliding Headers
        ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="hero" class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 pb-16 px-4">
+  <section id="hero" class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 pb-20 px-4 sm:px-6">
     
-    <!-- Ambient Glow Layers -->
+    <!-- Atmospheric Ambient Glows & Spotlights -->
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-dp-gold/[0.04] blur-[120px]"></div>
-      <div class="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] rounded-full bg-dp-crimson/[0.06] blur-[100px]"></div>
+      <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-dp-gold/[0.05] blur-[140px]"></div>
+      <div class="absolute bottom-10 left-1/4 w-[450px] h-[450px] rounded-full bg-dp-crimson/[0.08] blur-[120px]"></div>
+      <div class="absolute top-20 right-1/4 w-[350px] h-[350px] rounded-full bg-dp-gold/[0.03] blur-[100px]"></div>
     </div>
 
-    <!-- Corner Filigree Decorations -->
-    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tl hidden sm:block w-16 h-16 sm:w-20 sm:h-20 opacity-60" />
-    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tr hidden sm:block w-16 h-16 sm:w-20 sm:h-20 opacity-60" />
-    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-bl hidden sm:block w-16 h-16 sm:w-20 sm:h-20 opacity-60" />
-    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-br hidden sm:block w-16 h-16 sm:w-20 sm:h-20 opacity-60" />
+    <!-- Gold Filigree Frame Corners -->
+    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tl hidden md:block w-20 h-20 opacity-75" />
+    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tr hidden md:block w-20 h-20 opacity-75" />
+    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-bl hidden md:block w-20 h-20 opacity-75" />
+    <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-br hidden md:block w-20 h-20 opacity-75" />
 
-    <!-- Hero Content Stack -->
-    <div class="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto">
+    <!-- Main Hero Canvas Container -->
+    <div class="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto w-full">
 
-      <!-- Dreamers Productions Logo Title -->
-      <div class="mb-6 sm:mb-8 reveal-on-scroll">
-        <h1 class="font-cinzel-dec text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-gold-shimmer leading-tight tracking-wide">
+      <!-- Dreamers Productions Title -->
+      <div class="mb-4 sm:mb-6 reveal-on-scroll">
+        <div class="inline-flex items-center gap-3 mb-3">
+          <span class="w-12 h-px bg-gradient-to-r from-transparent to-dp-gold/70"></span>
+          <span class="text-dp-gold text-xs tracking-[0.35em] uppercase font-cinzel">Est. Nashville &amp; Worldwide</span>
+          <span class="w-12 h-px bg-gradient-to-l from-transparent to-dp-gold/70"></span>
+        </div>
+        <h1 class="font-cinzel-dec text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-gold-shimmer leading-tight tracking-wider">
           Dreamers
         </h1>
-        <p class="font-cinzel text-lg sm:text-xl md:text-2xl tracking-[0.35em] text-dp-gold/80 mt-1">PRODUCTIONS</p>
+        <p class="font-cinzel text-base sm:text-xl md:text-2xl tracking-[0.45em] text-dp-gold/90 mt-2 uppercase">
+          Productions
+        </p>
       </div>
 
-      <!-- Floating Open Grimoire -->
-      <div class="animate-float-book candle-glow mb-8 sm:mb-10 relative">
-        <img 
-          src="assets/images/open-leather-grimoire.jpg" 
-          alt="An ancient leather-bound grimoire open to aged parchment pages with astronomical diagrams" 
-          class="w-64 sm:w-80 md:w-[440px] lg:w-[520px] rounded-lg shadow-2xl shadow-black/80"
-          loading="eager"
-        />
-        <!-- Book glow underlay -->
-        <div class="absolute -inset-6 bg-dp-gold/[0.06] rounded-3xl blur-2xl -z-10"></div>
+      <!-- Leather-Bound Open Book Centerpiece -->
+      <div class="relative my-4 sm:my-6 animate-float-book candle-glow group cursor-pointer" onclick="document.getElementById('events').scrollIntoView({behavior: 'smooth'})">
+        <div class="relative max-w-[320px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[560px] mx-auto">
+          <!-- Subtle Amber Backdrop Radiance -->
+          <div class="absolute -inset-8 bg-dp-gold/[0.08] rounded-full blur-3xl -z-10 group-hover:bg-dp-gold/[0.14] transition-all duration-700"></div>
+          
+          <img 
+            src="assets/images/open-leather-grimoire-clean.png" 
+            alt="An ancient leather-bound open book with deckled pages and arcane illustrations" 
+            class="w-full h-auto drop-shadow-[0_20px_35px_rgba(0,0,0,0.95)] transition-transform duration-500 group-hover:scale-102"
+            loading="eager"
+          />
+        </div>
+        <p class="text-[11px] font-cinzel tracking-[0.25em] text-dp-gold/60 mt-2 uppercase group-hover:text-dp-gold transition-colors">
+          ✦ Click to Unveil the Chronicles ✦
+        </p>
       </div>
 
-      <!-- Sliding Headers -->
-      <div class="space-y-2 sm:space-y-3">
-        <h2 class="font-cinzel text-2xl sm:text-3xl md:text-5xl tracking-wider text-white animate-slide-left" style="animation-delay: 0.3s; opacity: 0;">
-          Interactive Parties
-        </h2>
-        <h2 class="font-cinzel text-2xl sm:text-3xl md:text-5xl tracking-wider text-white animate-slide-right" style="animation-delay: 0.6s; opacity: 0;">
-          Creative Events
-        </h2>
+      <!-- Sliding Headers Left and Right -->
+      <div class="w-full flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 lg:gap-16 mt-4">
+        <div class="animate-slide-left text-center md:text-right">
+          <h2 class="font-cinzel-dec text-2xl sm:text-3xl md:text-4xl text-white tracking-wider drop-shadow-md">
+            Interactive Parties
+          </h2>
+          <div class="flex items-center justify-center md:justify-end gap-2 mt-1">
+            <span class="text-xs font-playfair italic text-dp-gold/80">Immersive Theatrical Dramas</span>
+            <span class="w-8 h-px bg-dp-crimson"></span>
+          </div>
+        </div>
+
+        <span class="text-dp-gold text-2xl hidden md:inline-block">✦</span>
+
+        <div class="animate-slide-right text-center md:text-left">
+          <h2 class="font-cinzel-dec text-2xl sm:text-3xl md:text-4xl text-white tracking-wider drop-shadow-md">
+            Creative Events
+          </h2>
+          <div class="flex items-center justify-center md:justify-start gap-2 mt-1">
+            <span class="w-8 h-px bg-dp-crimson"></span>
+            <span class="text-xs font-playfair italic text-dp-gold/80">Bespoke Atelier Celebrations</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Scroll Indicator -->
-      <div class="mt-10 sm:mt-14 flex flex-col items-center gap-2 opacity-60">
-        <span class="font-cinzel text-xs tracking-[0.3em] text-dp-gold/70 uppercase">Explore</span>
+      <!-- Action Buttons -->
+      <div class="mt-10 sm:mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+        <a href="#events" 
+           class="px-8 py-3.5 rounded-full font-cinzel text-xs sm:text-sm tracking-[0.2em] uppercase font-bold text-dp-black bg-gradient-to-r from-dp-gold-dark via-dp-gold to-dp-gold-light hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+          Explore Experiences
+        </a>
+        <a href="#booking" 
+           class="px-8 py-3.5 rounded-full font-cinzel text-xs sm:text-sm tracking-[0.2em] uppercase font-semibold text-dp-gold border border-dp-gold/60 hover:bg-dp-gold/10 hover:border-dp-gold hover:scale-105 active:scale-95 transition-all">
+          Book Your Event
+        </a>
+      </div>
+
+      <!-- Scroll Invitation -->
+      <div class="mt-12 sm:mt-16 flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+        <span class="font-cinzel text-[10px] tracking-[0.35em] text-dp-gold uppercase">Descend Into The Mystery</span>
         <svg class="w-5 h-5 text-dp-gold animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
       </div>
+
     </div>
   </section>
 
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       DIVIDER — Ornate Gold Line
+       ORNATE DIVIDER WITH GOLD CREST
        ═══════════════════════════════════════════════════════════════════════ -->
-  <div class="max-w-4xl mx-auto px-8 py-2">
-    <div class="h-px bg-gradient-to-r from-transparent via-dp-gold/50 to-transparent"></div>
+  <div class="max-w-4xl mx-auto px-6 py-6 flex items-center justify-center gap-4 opacity-70">
+    <div class="flex-1 h-px bg-gradient-to-r from-transparent via-dp-gold/60 to-dp-gold/20"></div>
+    <span class="text-dp-gold text-lg">✦ ◈ ✦</span>
+    <div class="flex-1 h-px bg-gradient-to-l from-transparent via-dp-gold/60 to-dp-gold/20"></div>
   </div>
 
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       EVENTS / SERVICES — Tarot Card Feature Grid
+       FEATURE GRID — 4 Interactive Tarot / Vintage Playing Cards
        ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="events" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+  <section id="events" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 relative">
     <div class="max-w-7xl mx-auto">
 
-      <!-- Section Header -->
-      <div class="text-center mb-14 sm:mb-20 reveal-on-scroll">
-        <p class="font-cinzel text-sm tracking-[0.4em] text-dp-crimson uppercase mb-3">Our Experiences</p>
-        <h2 class="font-cinzel-dec text-3xl sm:text-4xl md:text-5xl text-gold-gradient mb-5">Choose Your Adventure</h2>
-        <p class="font-body text-gray-400 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-          Each event is a meticulously crafted world — step inside and become part of the story. Hover or tap to reveal what awaits.
+      <!-- Section Title & Subtitle -->
+      <div class="text-center mb-16 sm:mb-20 reveal-on-scroll">
+        <p class="font-cinzel text-xs sm:text-sm tracking-[0.4em] text-dp-crimson uppercase mb-3 font-semibold">The Four Realms</p>
+        <h2 class="font-cinzel-dec text-3xl sm:text-5xl lg:text-6xl text-gold-gradient mb-5">
+          Signature Experiences
+        </h2>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-dp-gold to-transparent mx-auto mb-6"></div>
+        <p class="font-body text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+          Styled as antique tarot arcana, each experience is customized from the ground up. 
+          <span class="text-dp-gold-light">Hover or tap any card</span> to inspect the secret itinerary, guest capacities, and booking details.
         </p>
       </div>
 
-      <!-- Tarot Card Grid -->
-      <div id="services" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      <!-- 4 Tarot Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
 
-        <!-- Card 1: Mystery & Sleuthing -->
+        <!-- CARD I: Mystery & Sleuthing -->
         <div class="tarot-perspective reveal-on-scroll" style="transition-delay: 0.1s;">
-          <div class="tarot-card h-[420px] sm:h-[460px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="tarot-card h-[490px] sm:h-[520px]" onclick="this.classList.toggle('is-flipped')">
             <div class="tarot-card-inner">
+              
               <!-- Front -->
-              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-center p-6 text-center">
+              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-between p-6 sm:p-7 text-center">
+                <!-- Corners -->
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tr" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-bl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-br" />
-                <!-- Magnifying Glass SVG Icon -->
-                <div class="w-20 h-20 mb-6 flex items-center justify-center">
-                  <svg class="w-16 h-16 text-dp-gold drop-shadow-lg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <circle cx="26" cy="26" r="16" stroke-width="3" />
-                    <line x1="38" y1="38" x2="56" y2="56" stroke-width="4" stroke-linecap="round" />
-                    <circle cx="26" cy="26" r="10" stroke-width="1" opacity="0.3" />
-                  </svg>
+
+                <!-- Card Header -->
+                <div class="pt-2">
+                  <span class="font-cinzel text-[11px] tracking-[0.3em] text-dp-gold/80 uppercase">Arcanum I</span>
+                  <div class="w-8 h-px bg-dp-gold/40 mx-auto mt-1"></div>
                 </div>
-                <h3 class="font-cinzel-dec text-lg sm:text-xl text-gold-gradient mb-2">Mystery</h3>
-                <p class="font-cinzel text-sm text-dp-gold/70 tracking-widest uppercase">&amp; Sleuthing</p>
-                <div class="mt-4 w-12 h-px bg-dp-gold/40"></div>
-                <p class="mt-3 text-xs text-gray-500 font-body">Tap to reveal</p>
+
+                <!-- Card Motif Center -->
+                <div class="my-auto flex flex-col items-center">
+                  <div class="w-24 h-32 flex items-center justify-center p-2 mb-3">
+                    <img src="assets/images/motif-glass-perfect.png" alt="Magnifying glass" class="max-h-full object-contain drop-shadow-[0_8px_16px_rgba(212,175,55,0.3)] group-hover:scale-105 transition-transform" />
+                  </div>
+                  <h3 class="font-cinzel-dec text-xl text-gold-gradient leading-tight">Mystery</h3>
+                  <p class="font-cinzel text-xs text-dp-gold/80 tracking-[0.25em] uppercase mt-1">&amp; Sleuthing</p>
+                  <p class="font-playfair italic text-xs text-gray-400 mt-3 px-2">
+                    "Whodunits, noir interrogations &amp; high-stakes deduction."
+                  </p>
+                </div>
+
+                <!-- Bottom Prompt -->
+                <div class="pb-2">
+                  <span class="font-cinzel text-[10px] tracking-[0.2em] text-dp-gold/70 uppercase inline-flex items-center gap-1.5 border border-dp-gold/30 px-3 py-1 rounded-full">
+                    <span>Flip Card</span> <span>↺</span>
+                  </span>
+                </div>
               </div>
+
               <!-- Back -->
-              <div class="tarot-face tarot-back flex flex-col items-center justify-center p-6 sm:p-8 text-center">
-                <div class="w-14 h-14 mb-5 rounded-full bg-dp-gold/10 flex items-center justify-center border border-dp-gold/30">
-                  <svg class="w-7 h-7 text-dp-gold" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <circle cx="26" cy="26" r="14" /><line x1="36" y1="36" x2="54" y2="54" stroke-width="4" stroke-linecap="round" />
-                  </svg>
+              <div class="tarot-face tarot-back flex flex-col justify-between p-6 sm:p-7 text-center">
+                <!-- Header -->
+                <div class="border-b border-dp-gold/30 pb-3">
+                  <span class="font-cinzel text-[10px] tracking-[0.25em] text-dp-gold/70 uppercase">Event Dossier</span>
+                  <h4 class="font-cinzel-dec text-lg text-dp-gold-light mt-1">Mystery &amp; Sleuthing</h4>
                 </div>
-                <h3 class="font-cinzel text-lg text-dp-gold-light mb-3">Mystery &amp; Sleuthing</h3>
-                <p class="font-body text-sm text-gray-300 leading-relaxed">
-                  Become the detective. Unravel clues, interrogate suspects, and solve the crime before the night ends. Perfect for corporate team-building or private celebrations.
-                </p>
-                <a href="#booking" class="mt-5 font-cinzel text-xs tracking-widest text-dp-gold hover:text-dp-gold-light uppercase transition-colors">Book Now →</a>
+
+                <!-- Details -->
+                <div class="my-auto space-y-3 text-left font-body text-xs text-gray-300 py-3">
+                  <p class="leading-relaxed">
+                    Live character actors infiltrate your party. Guests receive confidential dossiers, decipher blood-ink clues, and expose the culprit before the night expires.
+                  </p>
+                  <ul class="space-y-1.5 border-t border-b border-dp-gold/20 py-2.5 text-[11px] text-gray-400">
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Ideal Group:</span> <span>8 to 150+ Guests</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Duration:</span> <span>2.5 to 3.5 Hours</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Actor Cast:</span> <span>2–6 Live Performers</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Setting:</span> <span>Estates, Dinners &amp; Galas</span></li>
+                  </ul>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="pt-2">
+                  <a href="#booking" onclick="selectEventType('mystery')" class="w-full inline-block py-2 rounded-full font-cinzel text-[11px] tracking-[0.15em] text-dp-black bg-gradient-to-r from-dp-gold to-dp-gold-light hover:brightness-110 font-bold uppercase transition-all shadow-md">
+                    Reserve Experience →
+                  </a>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
 
-        <!-- Card 2: Theatrical Masquerades -->
+        <!-- CARD II: Theatrical Masquerades -->
         <div class="tarot-perspective reveal-on-scroll" style="transition-delay: 0.2s;">
-          <div class="tarot-card h-[420px] sm:h-[460px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="tarot-card h-[490px] sm:h-[520px]" onclick="this.classList.toggle('is-flipped')">
             <div class="tarot-card-inner">
-              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-center p-6 text-center">
+              
+              <!-- Front -->
+              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-between p-6 sm:p-7 text-center">
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tr" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-bl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-br" />
-                <!-- Mask SVG Icon -->
-                <div class="w-20 h-20 mb-6 flex items-center justify-center">
-                  <svg class="w-16 h-14 text-dp-crimson drop-shadow-lg" viewBox="0 0 80 50" fill="currentColor">
-                    <path d="M40 5C25 5 12 15 5 25c3 8 15 20 35 20s32-12 35-20C68 15 55 5 40 5z" fill="currentColor" opacity="0.9"/>
-                    <ellipse cx="26" cy="22" rx="9" ry="7" fill="#0D0D0D"/>
-                    <ellipse cx="54" cy="22" rx="9" ry="7" fill="#0D0D0D"/>
-                    <path d="M40 32c-3 0-5 2-5 4h10c0-2-2-4-5-4z" fill="#D4AF37" opacity="0.6"/>
-                    <path d="M5 25c0 0-3-8 0-15" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.5"/>
-                    <path d="M75 25c0 0 3-8 0-15" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.5"/>
-                  </svg>
+
+                <div class="pt-2">
+                  <span class="font-cinzel text-[11px] tracking-[0.3em] text-dp-gold/80 uppercase">Arcanum II</span>
+                  <div class="w-8 h-px bg-dp-gold/40 mx-auto mt-1"></div>
                 </div>
-                <h3 class="font-cinzel-dec text-lg sm:text-xl text-gold-gradient mb-2">Theatrical</h3>
-                <p class="font-cinzel text-sm text-dp-gold/70 tracking-widest uppercase">Masquerades</p>
-                <div class="mt-4 w-12 h-px bg-dp-gold/40"></div>
-                <p class="mt-3 text-xs text-gray-500 font-body">Tap to reveal</p>
-              </div>
-              <div class="tarot-face tarot-back flex flex-col items-center justify-center p-6 sm:p-8 text-center">
-                <div class="w-14 h-14 mb-5 rounded-full bg-dp-crimson/20 flex items-center justify-center border border-dp-crimson/40">
-                  <svg class="w-8 h-6 text-red-400" viewBox="0 0 80 50" fill="currentColor">
-                    <path d="M40 5C25 5 12 15 5 25c3 8 15 20 35 20s32-12 35-20C68 15 55 5 40 5z"/>
-                    <ellipse cx="26" cy="22" rx="8" ry="6" fill="#1a0404"/>
-                    <ellipse cx="54" cy="22" rx="8" ry="6" fill="#1a0404"/>
-                  </svg>
+
+                <div class="my-auto flex flex-col items-center">
+                  <div class="w-24 h-32 flex items-center justify-center p-2 mb-3">
+                    <img src="assets/images/motif-mask-perfect.png" alt="Venetian masquerade mask" class="max-h-full object-contain drop-shadow-[0_8px_16px_rgba(139,0,0,0.5)]" />
+                  </div>
+                  <h3 class="font-cinzel-dec text-xl text-gold-gradient leading-tight">Theatrical</h3>
+                  <p class="font-cinzel text-xs text-dp-gold/80 tracking-[0.25em] uppercase mt-1">Masquerades</p>
+                  <p class="font-playfair italic text-xs text-gray-400 mt-3 px-2">
+                    "Velvet cloaks, concealed identities &amp; grand ballroom intrigue."
+                  </p>
                 </div>
-                <h3 class="font-cinzel text-lg text-dp-gold-light mb-3">Theatrical Masquerades</h3>
-                <p class="font-body text-sm text-gray-300 leading-relaxed">
-                  Don your mask and enter a world of intrigue. Live actors, opulent costumes, and immersive storylines transport your guests to another era entirely.
-                </p>
-                <a href="#booking" class="mt-5 font-cinzel text-xs tracking-widest text-dp-gold hover:text-dp-gold-light uppercase transition-colors">Book Now →</a>
+
+                <div class="pb-2">
+                  <span class="font-cinzel text-[10px] tracking-[0.2em] text-dp-gold/70 uppercase inline-flex items-center gap-1.5 border border-dp-gold/30 px-3 py-1 rounded-full">
+                    <span>Flip Card</span> <span>↺</span>
+                  </span>
+                </div>
               </div>
+
+              <!-- Back -->
+              <div class="tarot-face tarot-back flex flex-col justify-between p-6 sm:p-7 text-center">
+                <div class="border-b border-dp-gold/30 pb-3">
+                  <span class="font-cinzel text-[10px] tracking-[0.25em] text-dp-gold/70 uppercase">Event Dossier</span>
+                  <h4 class="font-cinzel-dec text-lg text-dp-gold-light mt-1">Theatrical Masquerade</h4>
+                </div>
+
+                <div class="my-auto space-y-3 text-left font-body text-xs text-gray-300 py-3">
+                  <p class="leading-relaxed">
+                    Opulent Venetian revelry meets customized dramatic narrative. Guests receive personalized secret alter-egos with hidden alliances and royal drama.
+                  </p>
+                  <ul class="space-y-1.5 border-t border-b border-dp-gold/20 py-2.5 text-[11px] text-gray-400">
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Ideal Group:</span> <span>25 to 300+ Guests</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Duration:</span> <span>3 to 5 Hours</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Included:</span> <span>Custom Masks &amp; Scripts</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Atmosphere:</span> <span>Opulent &amp; Mysterious</span></li>
+                  </ul>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#booking" onclick="selectEventType('masquerade')" class="w-full inline-block py-2 rounded-full font-cinzel text-[11px] tracking-[0.15em] text-dp-black bg-gradient-to-r from-dp-gold to-dp-gold-light hover:brightness-110 font-bold uppercase transition-all shadow-md">
+                    Reserve Experience →
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- Card 3: Escape & Puzzles -->
+        <!-- CARD III: Escape & Puzzles -->
         <div class="tarot-perspective reveal-on-scroll" style="transition-delay: 0.3s;">
-          <div class="tarot-card h-[420px] sm:h-[460px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="tarot-card h-[490px] sm:h-[520px]" onclick="this.classList.toggle('is-flipped')">
             <div class="tarot-card-inner">
-              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-center p-6 text-center">
+              
+              <!-- Front -->
+              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-between p-6 sm:p-7 text-center">
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tr" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-bl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-br" />
-                <!-- Gears SVG Icon -->
-                <div class="w-20 h-20 mb-6 flex items-center justify-center">
-                  <svg class="w-16 h-16 text-dp-gold drop-shadow-lg" viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M26 8l-2 5-5-1-2 4 4 3-2 5h5l1 5 4-2 3 4 3-4 4 2 1-5h5l-2-5 4-3-2-4-5 1-2-5h-4l-1-3-2 3z" opacity="0.85"/>
-                    <circle cx="26" cy="22" r="6" fill="#0D0D0D"/>
-                    <path d="M44 28l-1.5 4-4-.8-1.5 3 3 2.5-1.5 4h4l.8 4 3-1.5 2.5 3 2.5-3 3 1.5.8-4h4l-1.5-4 3-2.5-1.5-3-4 .8-1.5-4h-3l-.8-2-1.5 2z" opacity="0.7"/>
-                    <circle cx="46" cy="38" r="4.5" fill="#0D0D0D"/>
-                  </svg>
+
+                <div class="pt-2">
+                  <span class="font-cinzel text-[11px] tracking-[0.3em] text-dp-gold/80 uppercase">Arcanum III</span>
+                  <div class="w-8 h-px bg-dp-gold/40 mx-auto mt-1"></div>
                 </div>
-                <h3 class="font-cinzel-dec text-lg sm:text-xl text-gold-gradient mb-2">Escape</h3>
-                <p class="font-cinzel text-sm text-dp-gold/70 tracking-widest uppercase">&amp; Puzzles</p>
-                <div class="mt-4 w-12 h-px bg-dp-gold/40"></div>
-                <p class="mt-3 text-xs text-gray-500 font-body">Tap to reveal</p>
-              </div>
-              <div class="tarot-face tarot-back flex flex-col items-center justify-center p-6 sm:p-8 text-center">
-                <div class="w-14 h-14 mb-5 rounded-full bg-dp-gold/10 flex items-center justify-center border border-dp-gold/30">
-                  <svg class="w-7 h-7 text-dp-gold" viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M26 8l-2 5-5-1-2 4 4 3-2 5h5l1 5 4-2 3 4 3-4 4 2 1-5h5l-2-5 4-3-2-4-5 1-2-5h-4l-1-3-2 3z" opacity="0.7"/>
-                    <circle cx="26" cy="22" r="6" fill="#1a0404"/>
-                  </svg>
+
+                <div class="my-auto flex flex-col items-center">
+                  <div class="w-24 h-32 flex items-center justify-center p-2 mb-3">
+                    <img src="assets/images/motif-gears-perfect.png" alt="Steampunk brass gears" class="max-h-full object-contain drop-shadow-[0_8px_16px_rgba(212,175,55,0.3)]" />
+                  </div>
+                  <h3 class="font-cinzel-dec text-xl text-gold-gradient leading-tight">Escape</h3>
+                  <p class="font-cinzel text-xs text-dp-gold/80 tracking-[0.25em] uppercase mt-1">&amp; Puzzles</p>
+                  <p class="font-playfair italic text-xs text-gray-400 mt-3 px-2">
+                    "Clockwork lockboxes, cryptexes &amp; adrenaline-fueled cipher hunts."
+                  </p>
                 </div>
-                <h3 class="font-cinzel text-lg text-dp-gold-light mb-3">Escape &amp; Puzzles</h3>
-                <p class="font-body text-sm text-gray-300 leading-relaxed">
-                  Race against the clock in our handcrafted puzzle rooms. Decipher codes, unlock hidden chambers, and collaborate to escape before time runs out.
-                </p>
-                <a href="#booking" class="mt-5 font-cinzel text-xs tracking-widest text-dp-gold hover:text-dp-gold-light uppercase transition-colors">Book Now →</a>
+
+                <div class="pb-2">
+                  <span class="font-cinzel text-[10px] tracking-[0.2em] text-dp-gold/70 uppercase inline-flex items-center gap-1.5 border border-dp-gold/30 px-3 py-1 rounded-full">
+                    <span>Flip Card</span> <span>↺</span>
+                  </span>
+                </div>
               </div>
+
+              <!-- Back -->
+              <div class="tarot-face tarot-back flex flex-col justify-between p-6 sm:p-7 text-center">
+                <div class="border-b border-dp-gold/30 pb-3">
+                  <span class="font-cinzel text-[10px] tracking-[0.25em] text-dp-gold/70 uppercase">Event Dossier</span>
+                  <h4 class="font-cinzel-dec text-lg text-dp-gold-light mt-1">Escape &amp; Puzzles</h4>
+                </div>
+
+                <div class="my-auto space-y-3 text-left font-body text-xs text-gray-300 py-3">
+                  <p class="leading-relaxed">
+                    Custom-built mobile escape chambers and mechanized heirloom boxes transported directly to your venue. Decipher codes against the clock.
+                  </p>
+                  <ul class="space-y-1.5 border-t border-b border-dp-gold/20 py-2.5 text-[11px] text-gray-400">
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Ideal Group:</span> <span>10 to 120 Guests</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Duration:</span> <span>60 to 90 Minutes</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Challenge:</span> <span>Multi-Team or Cooperative</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Hardware:</span> <span>Brass Cryptex &amp; Locks</span></li>
+                  </ul>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#booking" onclick="selectEventType('escape')" class="w-full inline-block py-2 rounded-full font-cinzel text-[11px] tracking-[0.15em] text-dp-black bg-gradient-to-r from-dp-gold to-dp-gold-light hover:brightness-110 font-bold uppercase transition-all shadow-md">
+                    Reserve Experience →
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- Card 4: Creative Studios -->
+        <!-- CARD IV: Creative Studios -->
         <div class="tarot-perspective reveal-on-scroll" style="transition-delay: 0.4s;">
-          <div class="tarot-card h-[420px] sm:h-[460px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="tarot-card h-[490px] sm:h-[520px]" onclick="this.classList.toggle('is-flipped')">
             <div class="tarot-card-inner">
-              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-center p-6 text-center">
+              
+              <!-- Front -->
+              <div class="tarot-face tarot-front gold-card-frame flex flex-col items-center justify-between p-6 sm:p-7 text-center">
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-tr" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-bl" />
                 <img src="assets/images/filigree-corner-perfect.png" alt="" class="corner-filigree corner-br" />
-                <!-- Paint Palette SVG Icon -->
-                <div class="w-20 h-20 mb-6 flex items-center justify-center">
-                  <svg class="w-16 h-16 drop-shadow-lg" viewBox="0 0 64 64" fill="none">
-                    <ellipse cx="30" cy="34" rx="22" ry="18" fill="#D4AF37" opacity="0.85"/>
-                    <circle cx="20" cy="28" r="4" fill="#8B0000"/>
-                    <circle cx="30" cy="22" r="3.5" fill="#1a5e1a"/>
-                    <circle cx="40" cy="27" r="3" fill="#1a3a7a"/>
-                    <circle cx="38" cy="38" r="3.5" fill="#E8C965"/>
-                    <circle cx="22" cy="40" r="4" fill="#0D0D0D"/>
-                    <rect x="46" y="14" width="4" height="24" rx="2" fill="#8B4513" transform="rotate(30 48 26)"/>
-                    <polygon points="52,10 54,8 50,6" fill="#C92A2A"/>
-                  </svg>
+
+                <div class="pt-2">
+                  <span class="font-cinzel text-[11px] tracking-[0.3em] text-dp-gold/80 uppercase">Arcanum IV</span>
+                  <div class="w-8 h-px bg-dp-gold/40 mx-auto mt-1"></div>
                 </div>
-                <h3 class="font-cinzel-dec text-lg sm:text-xl text-gold-gradient mb-2">Creative</h3>
-                <p class="font-cinzel text-sm text-dp-gold/70 tracking-widest uppercase">Studios</p>
-                <div class="mt-4 w-12 h-px bg-dp-gold/40"></div>
-                <p class="mt-3 text-xs text-gray-500 font-body">Tap to reveal</p>
-              </div>
-              <div class="tarot-face tarot-back flex flex-col items-center justify-center p-6 sm:p-8 text-center">
-                <div class="w-14 h-14 mb-5 rounded-full bg-dp-gold/10 flex items-center justify-center border border-dp-gold/30">
-                  <svg class="w-8 h-8" viewBox="0 0 64 64" fill="none">
-                    <ellipse cx="28" cy="32" rx="18" ry="14" fill="#D4AF37" opacity="0.5"/>
-                    <circle cx="20" cy="28" r="3" fill="#8B0000"/><circle cx="28" cy="23" r="2.5" fill="#1a5e1a"/>
-                    <circle cx="36" cy="28" r="2.5" fill="#1a3a7a"/>
-                  </svg>
+
+                <div class="my-auto flex flex-col items-center">
+                  <div class="w-24 h-32 flex items-center justify-center p-2 mb-3">
+                    <img src="assets/images/motif-palette-perfect.png" alt="Artist paint palette and brush" class="max-h-full object-contain drop-shadow-[0_8px_16px_rgba(212,175,55,0.3)]" />
+                  </div>
+                  <h3 class="font-cinzel-dec text-xl text-gold-gradient leading-tight">Creative</h3>
+                  <p class="font-cinzel text-xs text-dp-gold/80 tracking-[0.25em] uppercase mt-1">Studios</p>
+                  <p class="font-playfair italic text-xs text-gray-400 mt-3 px-2">
+                    "Curated masterclasses, cocktail painting &amp; artisanal ateliers."
+                  </p>
                 </div>
-                <h3 class="font-cinzel text-lg text-dp-gold-light mb-3">Creative Studios</h3>
-                <p class="font-body text-sm text-gray-300 leading-relaxed">
-                  Unleash your inner artist. Guided painting, mixed media workshops, and collaborative art experiences — all set in an enchanting studio atmosphere.
-                </p>
-                <a href="#booking" class="mt-5 font-cinzel text-xs tracking-widest text-dp-gold hover:text-dp-gold-light uppercase transition-colors">Book Now →</a>
+
+                <div class="pb-2">
+                  <span class="font-cinzel text-[10px] tracking-[0.2em] text-dp-gold/70 uppercase inline-flex items-center gap-1.5 border border-dp-gold/30 px-3 py-1 rounded-full">
+                    <span>Flip Card</span> <span>↺</span>
+                  </span>
+                </div>
               </div>
+
+              <!-- Back -->
+              <div class="tarot-face tarot-back flex flex-col justify-between p-6 sm:p-7 text-center">
+                <div class="border-b border-dp-gold/30 pb-3">
+                  <span class="font-cinzel text-[10px] tracking-[0.25em] text-dp-gold/70 uppercase">Event Dossier</span>
+                  <h4 class="font-cinzel-dec text-lg text-dp-gold-light mt-1">Creative Studios</h4>
+                </div>
+
+                <div class="my-auto space-y-3 text-left font-body text-xs text-gray-300 py-3">
+                  <p class="leading-relaxed">
+                    Interactive fine art ateliers tailored for upscale celebrations. Master painters guide guests through custom canvas compositions, wine &amp; brush soirees.
+                  </p>
+                  <ul class="space-y-1.5 border-t border-b border-dp-gold/20 py-2.5 text-[11px] text-gray-400">
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Ideal Group:</span> <span>6 to 50 Guests</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Duration:</span> <span>2 to 3 Hours</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Materials:</span> <span>All Canvases &amp; Oils</span></li>
+                    <li class="flex items-center justify-between"><span class="text-dp-gold">Takeaway:</span> <span>Personal Artwork Masterpiece</span></li>
+                  </ul>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#booking" onclick="selectEventType('creative')" class="w-full inline-block py-2 rounded-full font-cinzel text-[11px] tracking-[0.15em] text-dp-black bg-gradient-to-r from-dp-gold to-dp-gold-light hover:brightness-110 font-bold uppercase transition-all shadow-md">
+                    Reserve Experience →
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -349,163 +509,432 @@
 
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       DIVIDER
+       CREATIVE STUDIO & THE STUDY DESK SHOWCASE
        ═══════════════════════════════════════════════════════════════════════ -->
-  <div class="max-w-4xl mx-auto px-8 py-2">
-    <div class="h-px bg-gradient-to-r from-transparent via-dp-gold/50 to-transparent"></div>
-  </div>
-
-
-  <!-- ═══════════════════════════════════════════════════════════════════════
-       BOOKING CTA — Antique Parchment Scroll
-       ═══════════════════════════════════════════════════════════════════════ -->
-  <section id="booking" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto">
-
-      <!-- Section Header -->
-      <div class="text-center mb-12 reveal-on-scroll">
-        <p class="font-cinzel text-sm tracking-[0.4em] text-dp-crimson uppercase mb-3">Begin Your Story</p>
-        <h2 class="font-cinzel-dec text-3xl sm:text-4xl md:text-5xl text-gold-gradient mb-4">Book Your Event</h2>
-      </div>
-
-      <!-- Parchment Scroll Form -->
-      <div class="parchment-scroll p-8 sm:p-10 md:p-14 reveal-on-scroll" style="transition-delay: 0.15s;">
-
-        <!-- Decorative Header Inside Scroll -->
-        <div class="text-center mb-8">
-          <div class="flex items-center justify-center gap-3 mb-2">
-            <div class="w-10 h-px bg-[#8C683B]/60"></div>
-            <span class="text-[#8B0000] text-lg">✦</span>
-            <div class="w-10 h-px bg-[#8C683B]/60"></div>
+  <section id="creative-studio" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-b from-transparent via-[#140606]/40 to-transparent">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: The Story & Atelier Offerings -->
+        <div class="lg:col-span-5 reveal-on-scroll space-y-6">
+          <div class="inline-flex items-center gap-2">
+            <span class="w-6 h-px bg-dp-crimson"></span>
+            <p class="font-cinzel text-xs tracking-[0.35em] text-dp-crimson uppercase font-semibold">The Atelier</p>
           </div>
-          <h3 class="font-cinzel text-xl sm:text-2xl text-[#3D2812] tracking-wide">Request an Invitation</h3>
-          <p class="font-body text-sm text-[#57463B] mt-2 max-w-md mx-auto">
-            Fill out the details below and our event masters will craft a bespoke experience for you.
+          <h2 class="font-cinzel-dec text-3xl sm:text-4xl lg:text-5xl text-gold-gradient leading-tight">
+            The Creative Studio
+          </h2>
+          <p class="font-playfair italic text-gray-300 text-lg">
+            "Where imagination takes physical form and every participant becomes a creator."
           </p>
-        </div>
-
-        <form id="booking-form" class="space-y-5" onsubmit="handleBookingSubmit(event)">
-          <!-- Name -->
-          <div>
-            <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5" for="guest-name">Your Name</label>
-            <input id="guest-name" type="text" required placeholder="e.g. Lady Ashworth"
-              class="parchment-input w-full px-4 py-3 rounded-lg text-sm" />
-          </div>
-
-          <!-- Email -->
-          <div>
-            <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5" for="guest-email">Email Address</label>
-            <input id="guest-email" type="email" required placeholder="your@email.com"
-              class="parchment-input w-full px-4 py-3 rounded-lg text-sm" />
-          </div>
-
-          <!-- Event Type -->
-          <div>
-            <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5" for="event-type">Event Type</label>
-            <select id="event-type" required
-              class="parchment-input w-full px-4 py-3 rounded-lg text-sm appearance-none cursor-pointer">
-              <option value="" disabled selected>Choose your adventure…</option>
-              <option value="mystery">Mystery &amp; Sleuthing</option>
-              <option value="masquerade">Theatrical Masquerade</option>
-              <option value="escape">Escape &amp; Puzzles</option>
-              <option value="creative">Creative Studio</option>
-              <option value="custom">Custom Event</option>
-            </select>
-          </div>
-
-          <!-- Guest Count & Date -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5" for="guest-count">Number of Guests</label>
-              <input id="guest-count" type="number" min="1" max="500" placeholder="10"
-                class="parchment-input w-full px-4 py-3 rounded-lg text-sm" />
+          <p class="font-body text-gray-400 text-sm sm:text-base leading-relaxed">
+            Dreamers Productions operates beyond conventional party entertainment. In our Creative Studio experiences, we blend fine artistry, theatrical set-design techniques, and bespoke mixology to create hands-on atelier evenings.
+          </p>
+          
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3">
+              <span class="text-dp-gold text-lg mt-0.5">✦</span>
+              <div>
+                <h4 class="font-cinzel text-sm text-dp-gold-light tracking-wide uppercase">Bespoke Heirloom Workshops</h4>
+                <p class="font-body text-xs text-gray-400 mt-1">Guests sculpt, paint, or decipher custom theatrical props that serve as permanent keepsakes.</p>
+              </div>
             </div>
-            <div>
-              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5" for="event-date">Preferred Date</label>
-              <input id="event-date" type="date"
-                class="parchment-input w-full px-4 py-3 rounded-lg text-sm" />
+            <div class="flex items-start gap-3">
+              <span class="text-dp-gold text-lg mt-0.5">✦</span>
+              <div>
+                <h4 class="font-cinzel text-sm text-dp-gold-light tracking-wide uppercase">Canvas &amp; Cocktail Masterclasses</h4>
+                <p class="font-body text-xs text-gray-400 mt-1">Pairing curated vintage cocktails with guided fine art canvas portraiture and atmospheric candlelight.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-dp-gold text-lg mt-0.5">✦</span>
+              <div>
+                <h4 class="font-cinzel text-sm text-dp-gold-light tracking-wide uppercase">Private Atelier Bookings</h4>
+                <p class="font-body text-xs text-gray-400 mt-1">Available for intimate birthdays, corporate retreat design jams, and VIP private gatherings.</p>
+              </div>
             </div>
           </div>
 
-          <!-- Message -->
-          <div>
-            <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5" for="guest-message">Tell Us Your Vision</label>
-            <textarea id="guest-message" rows="4" placeholder="Describe the event of your dreams…"
-              class="parchment-input w-full px-4 py-3 rounded-lg text-sm resize-none"></textarea>
-          </div>
-
-          <!-- Submit -->
-          <div class="pt-3 text-center">
-            <button type="submit"
-              class="wax-seal inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-cinzel text-sm sm:text-base tracking-wider text-white uppercase">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              Send Request
-            </button>
-          </div>
-        </form>
-
-        <!-- Success Message (hidden) -->
-        <div id="booking-success" class="hidden text-center py-8">
-          <div class="text-4xl mb-4">✦</div>
-          <h3 class="font-cinzel text-xl text-[#3D2812] mb-2">Your Request Has Been Sealed</h3>
-          <p class="font-body text-sm text-[#57463B]">Our event masters will reach out to you shortly.</p>
-        </div>
-
-        <!-- Phone Number Plaque -->
-        <div class="mt-8 text-center">
-          <div class="brass-plaque inline-block px-8 py-3 rounded-lg">
-            <p class="font-cinzel text-xs tracking-widest uppercase mb-1">Or Call Directly</p>
-            <a href="tel:+16155193116" class="font-cinzel-dec text-xl sm:text-2xl tracking-wider pulse-gold-phone" style="color: #231704; -webkit-text-fill-color: initial;">
-              615-519-3116
+          <div class="pt-4">
+            <a href="#booking" onclick="selectEventType('creative')" class="inline-flex items-center gap-2 font-cinzel text-xs tracking-[0.2em] uppercase text-dp-gold hover:text-dp-gold-light transition-colors">
+              <span>Commission an Atelier Session</span> <span>→</span>
             </a>
           </div>
         </div>
 
-      </div><!-- end parchment -->
+        <!-- Right: The Master Desk Showcase Artwork -->
+        <div class="lg:col-span-7 reveal-on-scroll relative" style="transition-delay: 0.2s;">
+          <div class="relative rounded-2xl overflow-hidden border border-dp-gold/40 shadow-[0_20px_50px_rgba(0,0,0,0.9)] group">
+            
+            <img 
+              src="assets/images/dreamers-desk-cinematic.jpg" 
+              alt="Dreamers Productions master study desk with leather book, compass, mask, paint palette, and spectacles" 
+              class="w-full h-auto object-cover group-hover:scale-103 transition-transform duration-700" 
+            />
+
+            <!-- Interactive Hotspot Badges -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
+            
+            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-cinzel text-dp-gold-light bg-black/70 backdrop-blur-md px-4 py-2.5 rounded-lg border border-dp-gold/30">
+              <span class="tracking-widest uppercase">The Master Desk &amp; Field Kit</span>
+              <span class="text-gray-400 font-body text-[11px]">Nashville, TN Studio</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       FOOTER
+       THE SECRET PROTOCOL — HOW IT WORKS
        ═══════════════════════════════════════════════════════════════════════ -->
-  <footer class="border-t border-dp-gold/15 py-10 sm:py-14 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto text-center">
+  <section id="protocol" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 relative">
+    <div class="max-w-5xl mx-auto">
 
-      <!-- Logo -->
-      <div class="mb-6">
-        <span class="font-cinzel-dec text-2xl text-gold-gradient">Dreamers Productions</span>
+      <!-- Header -->
+      <div class="text-center mb-16 reveal-on-scroll">
+        <p class="font-cinzel text-xs sm:text-sm tracking-[0.4em] text-dp-crimson uppercase mb-3 font-semibold">Directions &amp; How It Works</p>
+        <h2 class="font-cinzel-dec text-3xl sm:text-5xl text-gold-gradient mb-4">
+          The Secret Protocol
+        </h2>
+        <p class="font-body text-gray-400 max-w-xl mx-auto text-sm sm:text-base">
+          From the first discreet transmission to the final applause, our staging process is seamless and theatrical.
+        </p>
       </div>
 
-      <!-- Links -->
-      <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8 mb-6">
-        <a href="#events" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Events</a>
-        <a href="#services" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Creative Studio</a>
-        <a href="#booking" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Book a Party</a>
+      <!-- 4 Timeline Steps -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 relative">
+        
+        <!-- Step 1 -->
+        <div class="bg-gradient-to-b from-[#181818] to-[#101010] p-6 rounded-xl border border-dp-gold/25 reveal-on-scroll" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 rounded-full border border-dp-gold flex items-center justify-center font-cinzel text-dp-gold text-lg mb-4 bg-dp-gold/10">
+            01
+          </div>
+          <h3 class="font-cinzel text-base text-dp-gold-light uppercase tracking-wider mb-2">The Inquiry</h3>
+          <p class="font-body text-xs text-gray-400 leading-relaxed">
+            You submit your event vision or call our hotline. We align on guest count, venue acoustics, and your desired degree of mystery.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-gradient-to-b from-[#181818] to-[#101010] p-6 rounded-xl border border-dp-gold/25 reveal-on-scroll" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 rounded-full border border-dp-gold flex items-center justify-center font-cinzel text-dp-gold text-lg mb-4 bg-dp-gold/10">
+            02
+          </div>
+          <h3 class="font-cinzel text-base text-dp-gold-light uppercase tracking-wider mb-2">Bespoke Scripting</h3>
+          <p class="font-body text-xs text-gray-400 leading-relaxed">
+            Our playwrights and artisans custom-craft the plot, fabricate customized cipher boxes, and assign character roles to guests.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-gradient-to-b from-[#181818] to-[#101010] p-6 rounded-xl border border-dp-gold/25 reveal-on-scroll" style="transition-delay: 0.3s;">
+          <div class="w-12 h-12 rounded-full border border-dp-gold flex items-center justify-center font-cinzel text-dp-gold text-lg mb-4 bg-dp-gold/10">
+            03
+          </div>
+          <h3 class="font-cinzel text-base text-dp-gold-light uppercase tracking-wider mb-2">The Infiltration</h3>
+          <p class="font-body text-xs text-gray-400 leading-relaxed">
+            Professional actors in period attire blend into your party as guests, eccentric hosts, or suspects, kicking off live interactive drama.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-gradient-to-b from-[#181818] to-[#101010] p-6 rounded-xl border border-dp-gold/25 reveal-on-scroll" style="transition-delay: 0.4s;">
+          <div class="w-12 h-12 rounded-full border border-dp-gold flex items-center justify-center font-cinzel text-dp-gold text-lg mb-4 bg-dp-gold/10">
+            04
+          </div>
+          <h3 class="font-cinzel text-base text-dp-gold-light uppercase tracking-wider mb-2">The Revelation</h3>
+          <p class="font-body text-xs text-gray-400 leading-relaxed">
+            The climax unfolds. Locks open, secrets are unveiled, awards and certificates are presented, and an unforgettable memory is sealed.
+          </p>
+        </div>
+
       </div>
 
-      <!-- Phone -->
-      <div class="mb-6">
-        <a href="tel:+16155193116" class="pulse-gold-phone font-cinzel-dec text-xl sm:text-2xl">615-519-3116</a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       TALES OF REVELERS — TESTIMONIALS
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-t border-b border-dp-gold/15 bg-black/40">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-12 reveal-on-scroll">
+        <p class="font-cinzel text-xs tracking-[0.35em] text-dp-gold/70 uppercase">Chronicles of Past Hosts</p>
+        <h3 class="font-cinzel-dec text-2xl sm:text-4xl text-gold-gradient mt-2">What The Revelers Say</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-[#121212] p-6 sm:p-7 rounded-xl border border-dp-gold/20 flex flex-col justify-between reveal-on-scroll" style="transition-delay: 0.1s;">
+          <p class="font-playfair italic text-gray-300 text-sm leading-relaxed mb-6">
+            "Our annual gala was transformed into a 1920s masquerade murder investigation. The actors were astonishing — our guests are still debating clues weeks later."
+          </p>
+          <div class="border-t border-dp-gold/20 pt-4">
+            <h5 class="font-cinzel text-xs tracking-wider text-dp-gold-light uppercase font-bold">Victoria St. Claire</h5>
+            <p class="font-body text-[11px] text-gray-500">Private Estate Gala, Nashville</p>
+          </div>
+        </div>
+
+        <div class="bg-[#121212] p-6 sm:p-7 rounded-xl border border-dp-gold/20 flex flex-col justify-between reveal-on-scroll" style="transition-delay: 0.2s;">
+          <p class="font-playfair italic text-gray-300 text-sm leading-relaxed mb-6">
+            "The brass puzzle lockboxes and cipher challenges kept 80 senior executives completely hooked. The best corporate team experience we have ever staged."
+          </p>
+          <div class="border-t border-dp-gold/20 pt-4">
+            <h5 class="font-cinzel text-xs tracking-wider text-dp-gold-light uppercase font-bold">Marcus Holloway</h5>
+            <p class="font-body text-[11px] text-gray-500">VP of Innovation, Tech Retreat</p>
+          </div>
+        </div>
+
+        <div class="bg-[#121212] p-6 sm:p-7 rounded-xl border border-dp-gold/20 flex flex-col justify-between reveal-on-scroll" style="transition-delay: 0.3s;">
+          <p class="font-playfair italic text-gray-300 text-sm leading-relaxed mb-6">
+            "The Creative Studio workshop was sublime. Everyone took home an authentic canvas masterpiece under the candlelight. Dreamers Productions is pure magic."
+          </p>
+          <div class="border-t border-dp-gold/20 pt-4">
+            <h5 class="font-cinzel text-xs tracking-wider text-dp-gold-light uppercase font-bold">Elena Rostova</h5>
+            <p class="font-body text-[11px] text-gray-500">Milestone Birthday Soiree</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       CALL TO ACTION (CTA) — Antique Parchment Scroll & Pulsing Phone
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section id="booking" class="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 relative">
+    
+    <!-- Background Amber Glow Behind Scroll -->
+    <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+      <div class="w-[600px] h-[600px] bg-dp-gold/[0.04] rounded-full blur-[120px]"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto relative z-10">
+
+      <!-- Section Title -->
+      <div class="text-center mb-10 reveal-on-scroll">
+        <p class="font-cinzel text-xs sm:text-sm tracking-[0.4em] text-dp-crimson uppercase mb-3 font-semibold">Reserve Your Date</p>
+        <h2 class="font-cinzel-dec text-3xl sm:text-5xl text-gold-gradient mb-3">
+          Book Your Event
+        </h2>
+        <p class="font-body text-gray-400 text-sm max-w-md mx-auto">
+          Summon Dreamers Productions to orchestrate your private soiree, corporate gala, or bespoke mystery experience.
+        </p>
+      </div>
+
+      <!-- The Antique Parchment Scroll -->
+      <div class="parchment-scroll p-6 sm:p-10 md:p-12 reveal-on-scroll shadow-2xl">
+        
+        <!-- Ornate Crest on Scroll Top -->
+        <div class="text-center mb-8 pb-4 border-b border-[#8C683B]/30">
+          <div class="inline-flex items-center gap-3">
+            <span class="w-8 h-px bg-[#8C683B]/60"></span>
+            <span class="text-dp-crimson text-xl font-serif">✦</span>
+            <span class="font-cinzel-dec text-lg sm:text-xl text-[#3D2812] tracking-wider font-bold">Dreamers Productions</span>
+            <span class="text-dp-crimson text-xl font-serif">✦</span>
+            <span class="w-8 h-px bg-[#8C683B]/60"></span>
+          </div>
+          <p class="font-playfair italic text-xs text-[#57463B] mt-1">Official Event Commission Request</p>
+        </div>
+
+        <!-- Interactive Booking Form -->
+        <form id="booking-form" class="space-y-5" onsubmit="handleBookingSubmit(event)">
+          
+          <!-- Experience Selector Badges -->
+          <div>
+            <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-2 font-bold">1. Select Experience</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <button type="button" onclick="selectEventTypeBadge('mystery')" class="event-badge py-2 px-2.5 rounded text-[11px] font-cinzel border border-[#8C683B]/60 text-[#3D2812] hover:bg-[#8C683B]/20 transition-all font-semibold active-badge" data-value="mystery">
+                Mystery
+              </button>
+              <button type="button" onclick="selectEventTypeBadge('masquerade')" class="event-badge py-2 px-2.5 rounded text-[11px] font-cinzel border border-[#8C683B]/60 text-[#3D2812] hover:bg-[#8C683B]/20 transition-all font-semibold" data-value="masquerade">
+                Masquerade
+              </button>
+              <button type="button" onclick="selectEventTypeBadge('escape')" class="event-badge py-2 px-2.5 rounded text-[11px] font-cinzel border border-[#8C683B]/60 text-[#3D2812] hover:bg-[#8C683B]/20 transition-all font-semibold" data-value="escape">
+                Escape
+              </button>
+              <button type="button" onclick="selectEventTypeBadge('creative')" class="event-badge py-2 px-2.5 rounded text-[11px] font-cinzel border border-[#8C683B]/60 text-[#3D2812] hover:bg-[#8C683B]/20 transition-all font-semibold" data-value="creative">
+                Studio
+              </button>
+            </div>
+            <input type="hidden" id="selected-experience" value="mystery" />
+          </div>
+
+          <!-- Name & Phone -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="guest-name">Host / Contact Name *</label>
+              <input id="guest-name" type="text" required placeholder="e.g. Jonathan Hawthorne"
+                class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm" />
+            </div>
+            <div>
+              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="guest-phone">Telephone Number *</label>
+              <input id="guest-phone" type="tel" required placeholder="e.g. 615-555-0199"
+                class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm" />
+            </div>
+          </div>
+
+          <!-- Email & Location -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="guest-email">Email Address *</label>
+              <input id="guest-email" type="email" required placeholder="name@domain.com"
+                class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm" />
+            </div>
+            <div>
+              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="event-city">City / Venue Location</label>
+              <input id="event-city" type="text" placeholder="e.g. Nashville, TN"
+                class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm" />
+            </div>
+          </div>
+
+          <!-- Date & Guest Count -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="event-date">Estimated Date of Revelry</label>
+              <input id="event-date" type="date"
+                class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm" />
+            </div>
+            <div>
+              <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="guest-count">Estimated Guest Count</label>
+              <select id="guest-count" class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm cursor-pointer">
+                <option value="8-20">Intimate Gathering (8 – 20 Guests)</option>
+                <option value="20-50" selected>Private Soiree (20 – 50 Guests)</option>
+                <option value="50-100">Grand Party (50 – 100 Guests)</option>
+                <option value="100+">Full Gala / Corporate (100+ Guests)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Vision & Special Requests -->
+          <div>
+            <label class="font-cinzel text-xs tracking-widest text-[#57463B] uppercase block mb-1.5 font-bold" for="guest-message">Special Themes &amp; Secret Requests</label>
+            <textarea id="guest-message" rows="3" placeholder="Tell us about the occasion, special targets, or storyline ideas…"
+              class="parchment-input w-full px-3.5 py-2.5 rounded-md text-sm resize-none"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2 text-center">
+            <button type="submit"
+              class="wax-seal inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-cinzel text-xs sm:text-sm tracking-[0.2em] text-white uppercase font-bold shadow-lg">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>Seal &amp; Dispatch Request</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Wax Seal Success Confirmation -->
+        <div id="booking-success" class="hidden text-center py-8">
+          <div class="w-16 h-16 rounded-full bg-dp-crimson/20 border-2 border-dp-gold flex items-center justify-center mx-auto mb-4">
+            <span class="text-dp-gold text-2xl">✦</span>
+          </div>
+          <h3 class="font-cinzel-dec text-2xl text-[#3D2812] mb-2 font-bold">Your Request is Sealed in Secrecy</h3>
+          <p class="font-body text-sm text-[#57463B] max-w-md mx-auto leading-relaxed">
+            Our Master of Ceremonies will review your dossier and contact you directly at <span class="font-bold underline text-[#3D2812]">615-519-3116</span> within 24 hours to begin crafting your immersive story.
+          </p>
+          <div class="mt-6">
+            <button onclick="resetBookingForm()" class="font-cinzel text-xs tracking-widest text-[#3D2812] underline uppercase">
+              Submit Another Inquiry
+            </button>
+          </div>
+        </div>
+
+        <!-- Antique Brass Plaque with Pulsing Phone Loop -->
+        <div class="mt-8 pt-6 border-t border-[#8C683B]/30 text-center">
+          <p class="font-cinzel text-[11px] tracking-[0.25em] text-[#57463B] uppercase mb-2 font-bold">
+            Direct Telephone to the Master of Ceremonies
+          </p>
+          <div class="brass-plaque inline-block px-8 py-3.5 rounded-lg">
+            <a href="tel:6155193116" class="font-cinzel-dec text-2xl sm:text-3xl tracking-widest pulse-gold-phone">
+              615-519-3116
+            </a>
+          </div>
+          <p class="font-body text-[11px] text-[#57463B] mt-2">Available for urgent reservations &amp; private inquiries</p>
+        </div>
+
+      </div><!-- end parchment -->
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       FOOTER — Victorian Filigree Framing
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <footer class="border-t border-dp-gold/20 py-14 px-4 sm:px-6 lg:px-8 bg-black/80">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        
+        <!-- Logo & Tagline -->
+        <div>
+          <span class="font-cinzel-dec text-2xl text-gold-gradient tracking-wide">Dreamers Productions</span>
+          <p class="font-cinzel text-xs tracking-[0.3em] text-dp-gold/70 mt-1 uppercase">Interactive Parties &amp; Creative Events</p>
+          <p class="font-body text-xs text-gray-500 mt-2 max-w-sm">
+            Curating unforgettable mysteries, theatrical masquerades, mobile escape rooms, and fine art ateliers across Tennessee &amp; nationwide.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+          <a href="#hero" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Home</a>
+          <a href="#events" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Events</a>
+          <a href="#creative-studio" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Creative Studio</a>
+          <a href="#protocol" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">How It Works</a>
+          <a href="#booking" class="font-cinzel text-xs tracking-widest text-gray-400 hover:text-dp-gold transition-colors uppercase">Book a Party</a>
+        </div>
+
+        <!-- Phone & Contact -->
+        <div class="text-center md:text-right">
+          <p class="font-cinzel text-[10px] tracking-[0.25em] text-gray-400 uppercase mb-1">Direct Line</p>
+          <a href="tel:6155193116" class="font-cinzel-dec text-xl text-gold-gradient hover:brightness-125 transition-all">
+            615-519-3116
+          </a>
+          <p class="font-body text-[11px] text-gray-500 mt-1">Nashville, TN &amp; Worldwide</p>
+        </div>
+
       </div>
 
       <!-- Divider -->
-      <div class="w-24 h-px bg-dp-gold/30 mx-auto mb-6"></div>
+      <div class="w-full h-px bg-gradient-to-r from-transparent via-dp-gold/30 to-transparent my-8"></div>
 
       <!-- Copyright -->
-      <p class="font-body text-xs text-gray-500">
-        &copy; <span id="year"></span> Dreamers Productions. All rights reserved. Every story begins with a dreamer.
-      </p>
+      <div class="text-center">
+        <p class="font-body text-xs text-gray-500">
+          &copy; <span id="year"></span> Dreamers Productions. All rights reserved. Every story begins with a dreamer.
+        </p>
+      </div>
 
     </div>
   </footer>
 
 
   <!-- ═══════════════════════════════════════════════════════════════════════
-       JAVASCRIPT — Scroll Reveals, Mobile Nav, Form Handling
+       FLOATING ACTION BUTTON (FAB) — Direct Phone Quick Dial
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <aside class="fixed bottom-6 right-6 z-40">
+    <a href="tel:6155193116" 
+       class="fab-glow flex items-center gap-2.5 bg-gradient-to-r from-dp-gold-dark via-dp-gold to-dp-gold-light text-dp-black font-bold px-4 py-3 rounded-full hover:scale-108 active:scale-95 transition-all shadow-2xl group"
+       title="Call Dreamers Productions: 615-519-3116">
+      <svg class="w-5 h-5 group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+      <span class="font-cinzel text-xs tracking-wider hidden sm:inline">615-519-3116</span>
+    </a>
+  </aside>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       JAVASCRIPT LOGIC
        ═══════════════════════════════════════════════════════════════════════ -->
   <script>
-    // ── Set current year ──
+    // ── Set current copyright year ──
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // ── Mobile Navigation Toggle ──
@@ -515,14 +944,9 @@
 
     mobileToggle.addEventListener('click', () => {
       menuOpen = !menuOpen;
-      if (menuOpen) {
-        mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
-      } else {
-        mobileMenu.style.maxHeight = '0';
-      }
+      mobileMenu.style.maxHeight = menuOpen ? mobileMenu.scrollHeight + 'px' : '0';
     });
 
-    // Close mobile menu on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menuOpen = false;
@@ -530,48 +954,65 @@
       });
     });
 
-    // ── Scroll Reveal with IntersectionObserver ──
+    // ── IntersectionObserver Scroll Reveal ──
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Respect per-element transition-delay
-          const delay = entry.target.style.transitionDelay || '0s';
-          entry.target.style.transitionDelay = delay;
           entry.target.classList.add('is-revealed');
           revealObserver.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.12,
+      threshold: 0.1,
       rootMargin: '0px 0px -40px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // ── Nav background on scroll ──
+    // ── Smooth Nav background transition on scroll ──
     const nav = document.getElementById('main-nav');
-    let lastScrollY = 0;
-
     window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      if (scrollY > 80) {
-        nav.style.borderBottomColor = 'rgba(212, 175, 55, 0.35)';
-        nav.style.boxShadow = '0 10px 40px rgba(0,0,0,0.9), 0 0 20px rgba(212,175,55,0.08)';
+      if (window.scrollY > 60) {
+        nav.style.background = 'rgba(13, 13, 13, 0.94)';
+        nav.style.borderBottomColor = 'rgba(212, 175, 55, 0.4)';
       } else {
+        nav.style.background = 'rgba(13, 13, 13, 0.85)';
         nav.style.borderBottomColor = 'rgba(212, 175, 55, 0.28)';
-        nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.8), 0 0 15px rgba(212,175,55,0.05)';
       }
-      lastScrollY = scrollY;
     }, { passive: true });
 
-    // ── Booking Form Handler ──
+    // ── Experience Selection Badges ──
+    function selectEventTypeBadge(val) {
+      document.getElementById('selected-experience').value = val;
+      document.querySelectorAll('.event-badge').forEach(btn => {
+        if (btn.getAttribute('data-value') === val) {
+          btn.style.backgroundColor = '#8C683B';
+          btn.style.color = '#FFFFFF';
+        } else {
+          btn.style.backgroundColor = 'transparent';
+          btn.style.color = '#3D2812';
+        }
+      });
+    }
+
+    function selectEventType(val) {
+      selectEventTypeBadge(val);
+      const target = document.getElementById('booking');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Set initial badge styling
+    selectEventTypeBadge('mystery');
+
+    // ── Booking Form Submission ──
     function handleBookingSubmit(e) {
       e.preventDefault();
       const form = document.getElementById('booking-form');
       const success = document.getElementById('booking-success');
       
-      // Simple animation: hide form, show success
       form.style.opacity = '0';
       form.style.transform = 'scale(0.98)';
       form.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
@@ -587,10 +1028,21 @@
           success.style.opacity = '1';
           success.style.transform = 'translateY(0)';
         });
-      }, 450);
+      }, 420);
     }
 
-    // ── Smooth scroll for anchor links ──
+    function resetBookingForm() {
+      const form = document.getElementById('booking-form');
+      const success = document.getElementById('booking-success');
+      form.reset();
+      selectEventTypeBadge('mystery');
+      success.classList.add('hidden');
+      form.classList.remove('hidden');
+      form.style.opacity = '1';
+      form.style.transform = 'none';
+    }
+
+    // ── Smooth Scroll for Anchor Links ──
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
