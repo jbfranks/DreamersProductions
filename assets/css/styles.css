@@ -405,3 +405,61 @@ body {
     box-shadow: 0 0 35px rgba(212, 175, 55, 0.8), 0 12px 30px rgba(0, 0, 0, 0.9);
   }
 }
+
+/* ==========================================================================
+   Mobile Responsive Optimizations (Screens < 640px)
+   ========================================================================== */
+@media (max-width: 639px) {
+  /* Prevent horizontal overflow on mobile screens */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Adjust parchment scroll finials so they never cause scrollbars */
+  .parchment-scroll::before,
+  .parchment-scroll::after {
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 4px;
+    height: 14px;
+  }
+  .parchment-scroll::before {
+    top: -8px;
+  }
+  .parchment-scroll::after {
+    bottom: -8px;
+  }
+
+  /* Smoother reduced floating amplitude on small screens */
+  @keyframes floatBookMobile {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-7px); }
+  }
+  .animate-float-book {
+    animation: floatBookMobile 5s ease-in-out infinite;
+  }
+
+  /* Form input sizing to avoid mobile auto-zoom on iOS */
+  .parchment-input {
+    font-size: 16px !important;
+  }
+
+  /* Corner filigree on tarot cards scaled for mobile */
+  .corner-filigree {
+    width: 28px;
+    height: 28px;
+    opacity: 0.85;
+  }
+
+  /* Brass plaque wrapping and font adjustments */
+  .brass-plaque {
+    padding: 0.65rem 1rem !important;
+    max-width: 100%;
+  }
+  .brass-plaque .pulse-gold-phone {
+    font-size: 1.45rem !important;
+    word-break: break-all;
+  }
+}
